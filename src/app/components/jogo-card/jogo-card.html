@@ -1,0 +1,46 @@
+<div
+  class="jogo-card"
+  [style.background-image]="
+    jogo().imagem
+      ? 'url(' + jogo().imagem + ')'
+      : 'url(/nocape.png)'
+  ">
+
+  <div class="overlay">
+
+    <h3>{{ jogo().nome }}</h3>
+
+    <span class="badge">
+      {{ jogo().plataforma }}
+    </span>
+
+    <span class="badge-status"
+          [class.concluido]="jogo().zerado"
+          [class.andamento]="!jogo().zerado">
+      {{ jogo().zerado ? 'Concluído' : 'Em andamento' }}
+    </span>
+
+    <!-- ações -->
+    <div class="actions">
+
+      <button
+        class="status-btn"
+        (click)="alterarZerado()">
+
+        {{ jogo().zerado ? 'Marcar como não finalizado' : 'Marcar como concluído' }}
+
+      </button>
+
+      <button
+        class="remover-btn"
+        (click)="removerJogo()">
+
+        Remover
+
+      </button>
+
+    </div>
+
+  </div>
+
+</div>

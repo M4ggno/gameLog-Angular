@@ -1,0 +1,61 @@
+{
+  "jogos": [
+    {
+      "nome": "Resident Evil: Village",
+      "plataforma": "PC",
+      "zerado": true,
+      "rawgId": 452649,
+      "imagem": "https://media.rawg.io/media/games/6cc/6cc23249972a427f697a3d10eb57a820.jpg",
+      "id": "i2-ng8oSG8k"
+    },
+    {
+      "nome": "Dark Souls: Remastered",
+      "plataforma": "PC",
+      "zerado": true,
+      "rawgId": 51610,
+      "imagem": "https://media.rawg.io/media/games/29c/29c6c21cc0c78cff6f45d23631cc82f4.jpg",
+      "id": "WdHG3etZoRo"
+    },
+    {
+      "nome": "Dark Souls II",
+      "plataforma": "PC",
+      "zerado": true,
+      "rawgId": 3751,
+      "imagem": "https://media.rawg.io/media/games/651/6512783a214618584d144d5d852ba595.jpg",
+      "id": "phai5j6qeL4"
+    },
+    {
+      "nome": "Dark Souls III",
+      "plataforma": "PC",
+      "zerado": false,
+      "rawgId": 2551,
+      "imagem": "https://media.rawg.io/media/games/da1/da1b267764d77221f07a4386b6548e5a.jpg",
+      "id": "sRz3RP2epqE"
+    },
+    {
+      "nome": "Resident Evil 6",
+      "plataforma": "PC",
+      "zerado": false,
+      "rawgId": 2623,
+      "imagem": "https://media.rawg.io/media/games/f6f/f6f39c5b56413f7f4513b25989a1b747.jpg",
+      "id": "i1B5i0NNdx0"
+    },
+    {
+      "nome": "Lego Batman: Legacy of the Dark Knight",
+      "plataforma": "PC",
+      "zerado": false,
+      "rawgId": 1009245,
+      "imagem": "https://media.rawg.io/media/games/69a/69a6a1097f82210dbf8583f8e0d09123.jpg",
+      "id": "pRJ2HS9XVQ0"
+    },
+    {
+      "nome": "Lego Batman 2: DC Super Heroes",
+      "plataforma": "PC",
+      "zerado": false,
+      "rawgId": 1009244,
+      "imagem":"",
+      "id": "qjl8n9sXo2k"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

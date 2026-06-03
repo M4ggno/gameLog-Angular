@@ -1,0 +1,23 @@
+<div class="jogo-lista">
+
+  @if (jogos().length === 0) {
+
+    <p class="mensagem-vazia">
+      Nenhum jogo cadastrado.
+    </p>
+
+  } @else {
+
+    @for (jogo of jogos(); track jogo.id) {
+
+      <app-jogo-card
+        [jogo]="jogo"
+        (remover)="removerJogo($event)"
+        (alterarStatus)="alterarStatusJogo($event)">
+      </app-jogo-card>
+
+    }
+
+  }
+
+</div>

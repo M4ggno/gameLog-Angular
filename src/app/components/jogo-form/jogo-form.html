@@ -1,0 +1,52 @@
+<div class="jogo-form">
+
+  <div class="busca-container">
+
+    <input
+      type="text"
+      placeholder="Nome do jogo"
+      [(ngModel)]="nome"
+      (input)="buscarSugestoes()">
+
+    @if (sugestoes.length > 0) {
+
+      <div class="autocomplete">
+
+        @for (jogo of sugestoes; track jogo.id) {
+
+          <div
+            class="item"
+            (click)="selecionarJogo(jogo)">
+
+            <img
+              [src]="jogo.background_image"
+              [alt]="jogo.name">
+
+            <span>
+              {{ jogo.name }}
+            </span>
+
+          </div>
+
+        }
+
+      </div>
+
+    }
+
+  </div>
+
+  <select [(ngModel)]="plataforma">
+
+    <option value="PC">PC</option>
+    <option value="PS5">PS5</option>
+    <option value="Xbox">Xbox</option>
+    <option value="Switch">Switch</option>
+
+  </select>
+
+  <button (click)="adicionarJogo()">
+    Adicionar
+  </button>
+
+</div>
