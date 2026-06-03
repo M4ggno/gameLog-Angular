@@ -1,59 +1,146 @@
-# GameLog
+<p align="center">
+  <img src="/public/logo.png" width="200"/>
+</p>
+# gameLog - Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.9.
+O **gameLog** é uma aplicação desenvolvida em Angular para gerenciamento de jogos.  
+Com ela, você pode cadastrar seus jogos, acompanhar quais já foram zerados e organizar sua lista de forma simples e visual.
 
-## Development server
+O projeto utiliza **JSON Server** como backend simulado para fornecer uma API REST local.
 
-To start a local development server, run:
+---
 
-```bash
+## O que o projeto faz
+
+- 📌 Cadastro de jogos
+- 📝 Edição e remoção de jogos
+- 🎯 Marcação de jogos como **zerado / não zerado**
+- 🖼️ Suporte a imagem de capa dos jogos
+- 📋 Listagem dinâmica de jogos
+- ⚡ Interface simples, responsiva e organizada
+
+---
+
+## Versões utilizadas no projeto
+
+### Stack principal
+
+- Angular CLI: 21.2.13
+- Angular: 21.2.15
+- Node.js: 25.8.1
+- npm: 11.11.0
+- TypeScript: 5.9.3
+- RxJS: 7.8.2
+- JSON Server: 11.11.0
+- Vitest: 4.1.8
+- Sistema operacional: Windows 64-bit
+
+---
+
+### Observação importante sobre o Node.js
+
+O Angular não suporta oficialmente a versão Node.js 25.x utilizada neste projeto.
+
+Apesar disso, o projeto funciona normalmente no ambiente atual.  
+Para maior estabilidade, recomenda-se utilizar versões LTS do Node.js (como Node 20 LTS).
+
+---
+
+## Backend (JSON Server)
+
+O projeto usa o **JSON Server** para simular uma API REST real.
+
+Ele permite:
+
+- GET (listar jogos)
+- POST (criar jogos)
+- PUT (editar jogos)
+- DELETE (remover jogos)
+
+Os dados ficam armazenados no arquivo:
+
+db.json
+
+---
+
+## Como rodar o projeto
+
+### 1. Clonar o repositório
+
+git clone https://github.com/M4ggno/gameLog-Angular.git
+
+### 2. Acessar a pasta
+
+cd gameLog-Angular
+
+### 3. Instalar dependências
+
+npm install
+
+### 4. Rodar o backend (JSON Server)
+
+Em um terminal separado:
+
+json-server --watch db.json
+
+API disponível em:
+http://localhost:3000
+
+### 5. Rodar o Angular
+
+Em outro terminal:
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Acesse:
+http://localhost:4200
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Estrutura do projeto
 
-```bash
-ng generate component component-name
-```
+src/
+ ├── app/
+ │   ├── components/
+ │   ├── services/
+ │   ├── models/
+ │   ├── pages/
+ │   └── app.module.ts
+ ├── assets/
+ └── styles/
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## Exemplo de modelo de jogo
 
-## Building
+export interface Jogo {
+  id: number;
+  nome: string;
+  plataforma: string;
+  imagem?: string;
+  zerado: boolean;
+}
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## Possíveis melhorias futuras
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Filtros por plataforma e status
+- Sistema de avaliação dos jogos
+- Backend real com banco de dados
+- Dashboard de progresso
+- Persistência em nuvem
 
-## Running unit tests
+---
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+##  Autor
 
-```bash
-ng test
-```
+Desenvolvido por **M4ggno** e **lipeedevv**
+https://github.com/M4ggno
+https://github.com/lipeedevv
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## Licença
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este projeto está sob a licença MIT.
