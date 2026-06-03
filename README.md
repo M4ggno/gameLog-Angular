@@ -1,7 +1,8 @@
 <p align="center">
   <img src="/public/logo.png" width="200"/>
 </p>
-# gameLog - Angular
+
+## gameLog - Angular
 
 O **gameLog** é uma aplicação desenvolvida em Angular para gerenciamento de jogos.  
 Com ela, você pode cadastrar seus jogos, acompanhar quais já foram zerados e organizar sua lista de forma simples e visual.
