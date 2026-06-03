@@ -100,6 +100,7 @@ http://localhost:4200
 
 ## Estrutura do projeto
 
+```text
 src/
 ├── app/
 │   ├── components/
@@ -109,6 +110,7 @@ src/
 │   ├── app.config.ts
 │   └── app.routes.ts
 ├── main.ts
+```
 
 ---
 
