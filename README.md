@@ -136,9 +136,9 @@ export interface Jogo {
 
 ##  Autor
 
-Desenvolvido por - 
-**[M4ggno](https://github.com/M4ggno)**
-- **[lipeedevv](https://github.com/lipeedevv)**
+Desenvolvido por
+ 
+**[M4ggno](https://github.com/M4ggno)** & **[lipeedevv](https://github.com/lipeedevv)**
 
 ---
 
