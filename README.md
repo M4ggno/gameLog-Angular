@@ -101,19 +101,19 @@ http://localhost:4200
 ## Estrutura do projeto
 
 src/
- ├── app/
- │   ├── components/
- │   ├── services/
- │   ├── models/
- │   ├── pages/
- │   └── app.module.ts
- ├── assets/
- └── styles/
-
+├── app/
+│   ├── components/
+│   ├── services/
+│   ├── models/
+│   ├── pages/
+│   ├── app.config.ts
+│   └── app.routes.ts
+├── main.ts
 ---
 
 ## Exemplo de modelo de jogo
 
+```ts
 export interface Jogo {
   id: number;
   nome: string;
@@ -121,6 +121,7 @@ export interface Jogo {
   imagem?: string;
   zerado: boolean;
 }
+```
 
 ---
 
@@ -137,7 +138,7 @@ export interface Jogo {
 ##  Autor
 
 Desenvolvido por
- 
+
 **[M4ggno](https://github.com/M4ggno)** & **[lipeedevv](https://github.com/lipeedevv)**
 
 ---
