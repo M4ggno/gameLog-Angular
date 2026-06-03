@@ -109,6 +109,7 @@ src/
 │   ├── app.config.ts
 │   └── app.routes.ts
 ├── main.ts
+
 ---
 
 ## Exemplo de modelo de jogo
