@@ -8,7 +8,7 @@ export class RawgService {
 
   private http = inject(HttpClient);
 
-  private apiKey = '701acf27959046158a57a35c41e8a9c5';
+  private apiKey = 'COLAR_API_KEY';
 
   buscarJogos(nome: string) {
     return this.http.get(
